@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.26730.8
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShopLegacyMVC", "src\eShopLegacyMVC\eShopLegacyMVC.csproj", "{C4E50A92-30E2-4592-9A9A-A9D2B1B13A7E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F8B67BD0-1656-4A70-BD30-76E9343D927F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShopCore", "src\eShopCore\eShopCore.csproj", "{2EA4BE71-C021-43E5-B3CE-10AE4D19C93F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,11 +19,18 @@ Global
 		{C4E50A92-30E2-4592-9A9A-A9D2B1B13A7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C4E50A92-30E2-4592-9A9A-A9D2B1B13A7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C4E50A92-30E2-4592-9A9A-A9D2B1B13A7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EA4BE71-C021-43E5-B3CE-10AE4D19C93F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EA4BE71-C021-43E5-B3CE-10AE4D19C93F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EA4BE71-C021-43E5-B3CE-10AE4D19C93F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EA4BE71-C021-43E5-B3CE-10AE4D19C93F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C4C56512-600D-4F1D-A807-B2447FC89B80}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2EA4BE71-C021-43E5-B3CE-10AE4D19C93F} = {F8B67BD0-1656-4A70-BD30-76E9343D927F}
 	EndGlobalSection
 EndGlobal
