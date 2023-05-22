@@ -1,7 +1,9 @@
-﻿using eShopLegacyWebForms.Models.Infrastructure;
+﻿using Azure.Identity;
+using eShopLegacyWebForms.Models.Infrastructure;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration;
+using System.Data.SqlClient;
 
 namespace eShopLegacyWebForms.Models
 {
@@ -9,6 +11,16 @@ namespace eShopLegacyWebForms.Models
     {
         public CatalogDBContext() : base("name=CatalogDBContext")
         {
+            var conn = (SqlConnection)Database.Connection;
+
+            // Check if the connection is a SQL Azure connection
+            if (!conn.ConnectionString.ToLower().Contains("database.windows.net"))
+            { 
+                return;
+            }            
+            
+            var token = new DefaultAzureCredential().GetToken(new Azure.Core.TokenRequestContext(new[] { "https://database.windows.net/.default" }));
+            conn.AccessToken = token.Token;
         }
 
         public DbSet<CatalogItem> CatalogItems { get; set; }

@@ -1,6 +1,8 @@
 
 # eShopModernizing - Modernizing ASP.NET Web apps (MVC and WebForms) and N-Tier apps (WCF + WinForms) with Windows Containers and Azure
 
+>**Note** This fork of the eShopModernizing repo demonstrates the changes needed to migrate the solution in the eShopLegacyWebFormsSolution directory to Azure. The changes largely follow the learning modules in the [Migrate an ASP.NET web application to Azure with Visual Studio](https://learn.microsoft.com/training/paths/igrate-aspnet-web-application/) training path.
+
 This repo provides three sample hypothetical legacy eShop web apps (traditional ASP.NET WebForms and MVC in .NET Framework and an N-Tier app based on a WCF service and a client WinForms desktop app) and how you can modernize them (Lift and Shift scenario) with Windows Containers and Azure Cloud into the following deployment options:
 
 - Local build and deployment in dev PC with Visual Studio and Docker for Windows
